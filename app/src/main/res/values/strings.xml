@@ -8,4 +8,7 @@
     <string name="text_result">Результат</string>
     <string name="reset">RESET</string>
     <string name="exit">EXIT</string>
+    <string name="version_text">версия 1.0</string>
+    <string name="data_cleared_text">Данные очищены</string>
+    <string name="app_closed_text">Приложение закрыто</string>
 </resources>

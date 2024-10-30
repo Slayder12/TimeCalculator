@@ -7,19 +7,16 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-
-    <TextView
-        android:id="@+id/title_textTV"
-        android:layout_width="wrap_content"
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarMain"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/title_text"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        android:background="@color/green"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.1"/>
+        tools:ignore="MissingConstraints"
+
+        />
+
 
     <LinearLayout
         android:id="@+id/input_pad"
@@ -29,7 +26,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/title_textTV"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarMain"
         app:layout_constraintVertical_bias="0.2">
 
         <EditText
@@ -73,7 +70,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/plus"
-            android:backgroundTint="@color/blue"
+            android:backgroundTint="@color/green2"
             android:textSize="18sp"
             android:layout_marginStart="4dp"
             android:layout_marginEnd="2dp"
@@ -90,7 +87,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/minus"
-            android:backgroundTint="@color/blue"
+            android:backgroundTint="@color/green2"
             android:textSize="18sp"
             android:layout_marginStart="2dp"
             android:layout_marginEnd="4dp"
@@ -112,6 +109,7 @@
         android:textSize="24sp"
         android:textStyle="bold"
         android:padding="10dp"
+        android:textColor="@android:color/black"
         android:textColorHint="@color/red"
         android:background="@drawable/text_view_border"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -120,52 +118,7 @@
         app:layout_constraintTop_toBottomOf="@+id/choose_operation"
         app:layout_constraintVertical_bias="0.1" />
 
-    <LinearLayout
-        android:id="@+id/reset_exit"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/result_textTV"
-        app:layout_constraintVertical_bias="0.15">
 
-        <Button
-            android:id="@+id/resetBTN"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/reset"
-            android:backgroundTint="@color/blue"
-            android:textSize="18sp"
-            android:layout_marginStart="4dp"
-            android:layout_marginEnd="2dp"
-            android:padding="12dp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
-
-        <Button
-            android:id="@+id/exitBTN"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/exit"
-            android:backgroundTint="@color/blue"
-            android:textSize="18sp"
-            android:layout_marginStart="2dp"
-            android:layout_marginEnd="4dp"
-            android:padding="12dp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
-
-    </LinearLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

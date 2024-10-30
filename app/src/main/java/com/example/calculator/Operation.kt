@@ -4,6 +4,7 @@ class Operation(private val firstTime: String, private val secondTime: String) {
 
     fun addTimes(): String {
         val totalSeconds = convertToSeconds(firstTime) + convertToSeconds(secondTime)
+
         return convertToTimeString(totalSeconds)
     }
 
